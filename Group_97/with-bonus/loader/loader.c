@@ -11,9 +11,9 @@ void loader_cleanup() {
         free(ehdr);
     }
     if(phdr!=NULL){
-
+        free(phdr);
     }
-    free(phdr);
+    
     close(fd);
 }
 
